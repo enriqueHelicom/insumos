@@ -1,0 +1,77 @@
+@import url('./color.css');
+
+/**
+ *  CSS Index
+ * 
+ * 1. #Font
+ * 2. #Reset
+ */
+
+/**
+  * #Font
+  */
+
+@font-face {
+    font-family: "Roboto Light";
+    src: url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "Roboto Black";
+    src: url("../fonts/roboto/Roboto-Black.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+}
+
+@font-face {
+    src: url("../fonts/Bebas_Neue/BebasNeue-Regular.ttf") format("truetype"), url("../fonts/Bebas_Neue/BebasNeue-Regular.otf") format("opentype");
+    font-family: "BebasNeue";
+    font-display: block;
+}
+
+@font-face {
+    src: url("../fonts/Bebas_Neue/BebasNeue-Bold.ttf") format("truetype");
+    font-family: "BebasNeueBold";
+}
+
+/***
+   * #Reset CSS
+   */
+
+body,
+html,
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Roboto Light";
+    outline: none !important;
+
+}
+
+img,
+a,
+svg,
+label {
+
+    user-select: none;
+}
+
+
+
+ul,
+ol {
+    list-style: none;
+}
