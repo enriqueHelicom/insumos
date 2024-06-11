@@ -3,5 +3,8 @@
     --secondary-color:#c40913;
     --third-color:#ffff;
     --title-color:#F5F7F8;
+    --link-navbar:#000b20;
     --bg-btn-green:#24d064;
+    --bg-navbar-middle:rgba(255, 255, 255, 0.6);
+    --bg-gradiant: linear-gradient(90deg, rgba(3, 23, 62, 1) 0%, rgba(35, 83, 158, 1) 50%, rgba(148, 28, 53, 1) 100%);
 }
