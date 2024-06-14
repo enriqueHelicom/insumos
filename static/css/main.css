@@ -450,6 +450,30 @@ label {
     color: var(--title-color);
 }
 
+.optiones-services__item .sub-container__item{
+    display: flex;
+    width: 100%;
+    margin-top: 5rem;
+    justify-content: space-around;
+    border: solid 1px #d67dff;
+}
+
+.optiones-services__item .sub-container__item .item__box{
+    width: 15rem;
+    height: 20rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+    border: solid 1px #f8a15a;
+}
+
+.optiones-services__item .sub-container__item .item__box h6{
+    font-size: 3rem;
+    color: var(--title-color);
+}
+
 /***
  * type_products
  */
