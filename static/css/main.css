@@ -79,8 +79,6 @@ li {
 
 section {
     padding: 0 4rem;
-    max-width: 100vw;
-    min-height: 100vh;
     margin: 0 auto;
 }
 
@@ -420,29 +418,30 @@ label {
     width: 100vw;
     height: 100vh;
     background-image: url('../img/banners/bg_option.jpg');
-    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
 }
 
 .optiones-services .optiones-services__container{
     width: 100%;
     min-height: 100vh;
     background: #02133a9c;
-    border: solid 1px greenyellow;
+   
     display: flex;
     flex-flow: row;
 }
 
 .optiones-services__container .optiones-services__item{
     width: 50%;
-    border: solid 1px pink;
-
+   
 }
 
 
 .optiones-services__item .title__item {
     padding: 2rem 3rem;
     text-align: center;
-    border: solid 1px #bfc8dd;
+ 
 }
 
 .optiones-services__item .title__item > h6{
@@ -454,25 +453,57 @@ label {
     display: flex;
     width: 100%;
     margin-top: 5rem;
-    justify-content: space-around;
-    border: solid 1px #d67dff;
+    justify-content: space-evenly;
+   
 }
 
 .optiones-services__item .sub-container__item .item__box{
     width: 15rem;
     height: 20rem;
     display: flex;
+    gap: 2rem;
+    text-align: center;
     flex-flow: column;
     justify-content: center;
     align-items: center;
     padding: 0.5rem 1.5rem;
-    border: solid 1px #f8a15a;
+
+}
+
+.sub-container__item .item__box:nth-child(2){
+    position: relative;
+    top: 10rem;
 }
 
 .optiones-services__item .sub-container__item .item__box h6{
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--title-color);
 }
+
+.optiones-services__item:nth-child(2){
+    position: relative;
+}
+
+.optiones-services__item .circle__blue{
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    position: relative;
+    left: 10%;
+    top:15%;
+    z-index: 1;
+}
+
+.optiones-services__item > img{
+    display: inline-block;
+    width: 45rem;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    z-index: 2;
+}
+
 
 /***
  * type_products
@@ -531,6 +562,8 @@ label {
     height: 100vh;
     z-index: 0;
     background-image: url('../img/banners/bg_option.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
 }
 
@@ -703,13 +736,14 @@ label {
  */
 .footer {
     height: 25rem;
-    width: 100%;
+    width: 100vw;
     display: flex;
     background: var(--bg-gradiant);
 }
 
 .footer .container-box {
     padding: 0 4rem;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -734,11 +768,11 @@ label {
 
 .container-box .item .contact__box .item ul li a {
     color: var(--title-color);
-    font-size: 1.2em;
+    font-size: 2em;
 }
 
 .container-box .item .contact__box .item ul li a i {
-    font-size: 1.2em;
+    font-size: 2em;
 }
 
 .container-box .item:nth-child(2) {
@@ -761,10 +795,164 @@ label {
 .container-box .item .address a,
 .container-box .item .terms a {
     color: var(--title-color);
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-top: 2rem;
 }
 
+
+/***
+ * 
+ * #shop start
+ * 
+ */
+
+ /** #backgroung__page */
+
+ .backgroung__page{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    top: -120px;
+    width: 100vw;
+    height: 40vh;
+    background-image: url('../img/banners/banner_products.jpg');
+    background-position: center;
+    background-size: cover;
+ }
+
+ .backgroung__page > h6{
+    position: relative;
+    top: 50%;
+    color: var(--title-color);
+    font-size: 5rem;
+ }
+
+/*** #Products */
+.products{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+.products .article{
+    width: 80%;
+}
+.products .sidebar{
+    width: 20%;
+}
+
+.products .sidebar{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.products .sidebar .filter__group h6{
+    color: var(--primary-color);
+    font-size: 3rem;
+}
+
+
+.products .sidebar .filter__group .filters ul li{
+    margin-top: 1.2rem;
+}
+
+.products .sidebar .filter__group .filters ul li a{
+    font-size: 1.5em;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.products .sidebar .filter__group:nth-child(2) .filters ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.products .sidebar .filter__group .filters ul li:hover a{
+    color: var(--secondary-color);
+
+}
+.products .article{
+    padding: 0.5rem;
+    border: solid 1px green;
+}
+
+.products .article .shop-block .shop-block__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.article .shop-block .shop-block__header h6{
+    font-size: 1.8em;
+}
+
+.article .shop-block .shop-block__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.shop-block .shop-block__cards .shop-block__card-item{
+    max-width: 20.5%;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-bottom: 65px;
+    padding:  0.4rem 0.5rem;
+}
+
+.shop-block .shop-block__cards .shop-block__card-item .img__product{
+    background: var(--bg-gradiant);
+    height: 15rem;
+    width: 100%;
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.shop-block .shop-block__cards .shop-block__card-item .img__product img{
+ width: 50%;
+ height: auto;
+ display: block;
+}
+
+
+.shop-block .shop-block__cards .shop-block__card-item  .content{
+    width: 100%;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop-block .shop-block__cards .shop-block__card-item  .content > h6{
+    font-size: 1.5em;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.shop-block .shop-block__cards .shop-block__card-item  .content .btn__cart{
+    padding:  0.5rem;
+    border: none;
+    background: var(--secondary-color);
+    border-radius: .5rem;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.shop-block__card-item  .content .btn__cart i{
+    color: var(--title-color);
+    font-size: 1.8em;
+}
 
 @media(max-width:991px) {
     html {
