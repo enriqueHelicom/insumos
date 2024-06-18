@@ -2,7 +2,7 @@
 
 /**
  *  CSS Index
- * 
+ *
  * 1. #Font
  * 2. #Reset
  */
@@ -837,16 +837,16 @@ label {
 
 
 .products .article{
-    width: 80%;
+    width: 70%;
 }
 .products .sidebar{
-    width: 20%;
+    width: 30%;
 }
 
 .products .sidebar{
     display: flex;
     flex-flow: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -861,7 +861,7 @@ label {
 }
 
 .products .sidebar .filter__group .filters ul li a{
-    font-size: 1.5em;
+    font-size: 1.8em;
     color: var(--primary-color);
     font-weight: 500;
 }
@@ -875,11 +875,9 @@ label {
 
 .products .sidebar .filter__group .filters ul li:hover a{
     color: var(--secondary-color);
-
 }
 .products .article{
     padding: 0.5rem;
-    border: solid 1px green;
 }
 
 .products .article .shop-block .shop-block__header{
@@ -889,40 +887,42 @@ label {
 
 
 .article .shop-block .shop-block__header h6{
-    font-size: 1.8em;
+    font-size: 2.3em;
+}
+
+.article .shop-block .shop-block__header h6 > span{
+    color: var(--secondary-color);
 }
 
 .article .shop-block .shop-block__cards{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 50px;
 }
 
 .shop-block .shop-block__cards .shop-block__card-item{
-    max-width: 20.5%;
+    max-width: 28.5%;
     width: 100%;
     height: auto;
     display: inline-block;
-    margin-bottom: 65px;
+    margin-left: 3rem;
+    margin-top: 1.8rem;
     padding:  0.4rem 0.5rem;
 }
 
 .shop-block .shop-block__cards .shop-block__card-item .img__product{
     background: var(--bg-gradiant);
-    height: 15rem;
-    width: 100%;
+    height: 25rem;
     border-radius: 0.8rem;
     padding: 1.5rem;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .shop-block .shop-block__cards .shop-block__card-item .img__product img{
- width: 50%;
- height: auto;
- display: block;
+    width: 15rem;
+    height: auto;
+    display: block;
 }
 
 
@@ -935,13 +935,13 @@ label {
 }
 
 .shop-block .shop-block__cards .shop-block__card-item  .content > h6{
-    font-size: 1.5em;
+    font-size: 2.2em;
     font-weight: 500;
     color: var(--primary-color);
 }
 
 .shop-block .shop-block__cards .shop-block__card-item  .content .btn__cart{
-    padding:  0.5rem;
+    padding: 0.3rem 0.5rem;
     border: none;
     background: var(--secondary-color);
     border-radius: .5rem;
@@ -949,9 +949,11 @@ label {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
+/** icon shop cart */
+
 .shop-block__card-item  .content .btn__cart i{
     color: var(--title-color);
-    font-size: 1.8em;
+    font-size: 2.5em;
 }
 
 @media(max-width:991px) {
