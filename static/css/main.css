@@ -5,10 +5,12 @@
  *
  * 1. #Font
  * 2. #Reset
+ * 3. #Buttoms themes
+ * 4. #Title theme
  */
 
 /**
-  * #Font
+  * #Font themes
   */
 
 @font-face {
@@ -45,9 +47,9 @@
     font-family: "BebasNeueBold";
 }
 
-/***
+/**
    * #Reset CSS
-   */
+*/
 
 * {
     font-family: "BebasNeue";
@@ -56,7 +58,6 @@
     box-sizing: border-box;
     transition: all .2s linear;
     text-decoration: none;
-
 }
 
 html {
@@ -83,8 +84,9 @@ section {
     margin: 0 auto;
 }
 
-/***
- * buttoms
+
+/**
+ *  #Buttoms themes
  */
 
 .btn {
@@ -105,6 +107,9 @@ section {
     color: var(--title-color);
 }
 
+/**
+* #Title theme
+*/
 .title_container {
     font-size: 3rem;
     font-weight: 600;
@@ -143,9 +148,10 @@ label {
 
 
 /**
- * #nav
- * 
+ * #navbar top
+ *
  */
+
 .nav-top__active {
     display: none;
 }
@@ -192,6 +198,7 @@ label {
     margin-right: 0.8rem;
 }
 
+
 .nav-middle {
     position: relative;
     z-index: 99;
@@ -231,8 +238,9 @@ label {
 }
 
 /***
- * #Home desktop
+ * #Home
  */
+
 .home {
     /**! position */
     position: relative;
@@ -255,13 +263,13 @@ label {
 
 .home__banner .slide-item {
     position: relative;
-    padding-top: 200px;
+    padding-top: 35rem;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
 
-.home__banner .slide-item>img {
+.home__banner .slide-item > img {
     position: absolute;
     top: 0;
     left: 0;
@@ -286,8 +294,8 @@ label {
 }
 
 .slide-item__block .slide-item__img {
+    max-width: 65.5%;
     width: 100%;
-    height: 20rem;
 }
 
 .slide-item__block .slide-item__text {
@@ -426,10 +434,7 @@ label {
 }
 
 .optiones-services .optiones-services__container {
-    width: 100%;
-    min-height: 100vh;
-    background: #02133a9c;
-
+    height: 100%;
     display: flex;
     flex-flow: row;
 }
@@ -443,7 +448,7 @@ label {
 .optiones-services__item .title__item {
     padding: 2rem 3rem;
     text-align: center;
-
+    margin-top: 4rem;
 }
 
 .optiones-services__item .title__item>h6 {
@@ -460,8 +465,9 @@ label {
 }
 
 .optiones-services__item .sub-container__item .item__box {
-    width: 15rem;
-    height: 20rem;
+    max-width: 65.5%;
+    width: 100%;
+    height: auto;
     display: flex;
     gap: 2rem;
     text-align: center;
@@ -469,7 +475,6 @@ label {
     justify-content: center;
     align-items: center;
     padding: 0.5rem 1.5rem;
-
 }
 
 .sub-container__item .item__box:nth-child(2) {
@@ -486,20 +491,11 @@ label {
     position: relative;
 }
 
-.optiones-services__item .circle__blue {
-    width: 50rem;
-    height: 50rem;
-    border-radius: 50%;
-    background-color: var(--primary-color);
-    position: relative;
-    left: 10%;
-    top: 15%;
-    z-index: 1;
-}
 
-.optiones-services__item>img {
-    display: inline-block;
-    width: 45rem;
+.optiones-services__item .image {
+    max-width: 65.5%;
+    width: 100%;
+    height: auto;
     position: absolute;
     bottom: 0;
     left: 10%;
