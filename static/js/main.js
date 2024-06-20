@@ -24,7 +24,7 @@ $("document").ready(function($){
             "position": "relative",
                 "top": "initial",
                 "left": "initial",
-                "background-color": "rgba(255, 255, 255, .6)"
+                "background-color": "rgba(255, 255, 255, .9)"
         
         });
     }
