@@ -1,33 +1,46 @@
-$("document").ready(function($){
+$("document").ready(function ($) {
+  $(window).on("scroll", function () {
+    fixedMenu();
+  });
 
-   $(window).on('scroll', function(){
-        fixedMenu();
-   });
+  // menu navbar
+  fixedMenu();
 
-
-   // menu navbar
-   fixedMenu();
-
-   function fixedMenu(){
-    if($(window).scrollTop() >= 80){
-        $('#navbarTop').addClass('nav-top__active');
-        $('#navbarMiddle').css({
-            "position": "fixed",
-            "top": "0",
-            "left": "0",
-            "background-color": "rgba(255, 255, 255, .9)",
-            "box-shadow": "0 0 20px rgba(0,0,0, .3)"
-        });
-    }else{
-        $('#navbarTop').removeClass('nav-top__active');
-        $('#navbarMiddle').css({
-            "position": "relative",
-                "top": "initial",
-                "left": "initial",
-                "background-color": "rgba(255, 255, 255, .9)"
-        
-        });
+  function fixedMenu() {
+    if ($(window).scrollTop() >= 80) {
+      $("#navbarTop").addClass("nav-top__active");
+      $("#navbarMiddle").css({
+        position: "fixed",
+        top: "0",
+        left: "0",
+        "background-color": "rgba(255, 255, 255, .9)",
+        "box-shadow": "0 0 20px rgba(0,0,0, .3)",
+      });
+    } else {
+      $("#navbarTop").removeClass("nav-top__active");
+      $("#navbarMiddle").css({
+        position: "relative",
+        top: "initial",
+        left: "initial",
+        "background-color": "rgba(255, 255, 255, .9)",
+      });
     }
-   }
+  }
+
+  
+  /** buttom navbar mobile */
+
+  $(".fa-bars").click(function () {
+    $(this).toggleClass("fa-window-close");
+    $(".navbar__menu").toggleClass("navbar__menu-toggle");
+  });
+
+  $(window).on('scroll load', function(){
+    $('.fa-bars').removeClass('fa-window-close');
+    $('.navbar__menu').removeClass('navbar__menu-toggle');
+
+     
+});
+
 
 });

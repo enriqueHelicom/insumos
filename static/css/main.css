@@ -85,16 +85,21 @@ section {
 }
 
 
+
 /**
  *  #Buttoms themes
  */
 
 .btn {
-    padding: 2rem 3rem;
+    padding: 1.5rem 2.5rem;
     border: none;
     border-radius: 0.5rem;
     font-size: 2.2em;
     cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 80%;
 }
 
 .btn-green {
@@ -106,6 +111,7 @@ section {
     background: var(--secondary-color);
     color: var(--title-color);
 }
+
 
 /**
 * #Title theme
@@ -198,6 +204,7 @@ label {
     margin-right: 0.8rem;
 }
 
+/** #navbar middle */
 
 .nav-middle {
     position: relative;
@@ -209,7 +216,7 @@ label {
 }
 
 .header-middle_white-transparent {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .container-box .navbar {
@@ -222,10 +229,15 @@ label {
 .container-box .navbar .navbar__menu {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .container-box .navbar .navbar__menu .navbar__menu-item {
     margin-left: 2rem;
+}
+
+.container-box .navbar .navbar__menu .navbar__menu-item:nth-child(6){
+    margin-left: auto;
 }
 
 .navbar__menu .navbar__menu-item a {
@@ -235,6 +247,20 @@ label {
 
 .navbar__menu .navbar__menu-item a:hover {
     color: var(--secondary-color);
+}
+
+.nav-middle .container-box .navbar .fa-bars{
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+    transition: 2s;
+    color: var(--primary-color);
+}
+
+.nav-middle .container-box .navbar .fa-window-close{
+  transform: rotate(180deg);
+  color: var(--secondary-color);
+  transition: 2s;
 }
 
 /***
@@ -427,7 +453,7 @@ label {
 .optiones-services {
     width: 100vw;
     height: 100vh;
-    background-image: url('../img/banners/bg_option.jpg');
+    background-image: url('../img/banners/desktop/bg_option.webp');
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -557,11 +583,10 @@ label {
     position: relative;
     min-height: 100vh;
     z-index: 0;
-    background-image: url('../img/banners/bg_option.jpg');
+    background-image: url('../img/banners/desktop/bg_option.webp');
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    border: solid 2px pink;
     display: flex;
     flex-flow: column;
     justify-content: space-around;
@@ -835,7 +860,7 @@ label {
     top: -120px;
     width: 100vw;
     height: 40vh;
-    background-image: url('../img/banners/banner_products.jpg');
+    background-image: url('../img/banners/desktop/banner_home.webp');
     background-position: center;
     background-size: cover;
 }
