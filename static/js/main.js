@@ -39,4 +39,11 @@ $(document).ready(function ($) {
     $('.navbar__menu').removeClass('navbar__menu-toggle');
   });
 
+  //close modal form
+  $("#close__modal").click(function(){
+    $(".modal-form").removeClass("modal-form__toggle");
+    $("#form__modal")[0].reset();
+    $("#product_container").remove();
+  });
+
 });

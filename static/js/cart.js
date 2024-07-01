@@ -2,7 +2,7 @@ export function cartShopping(){
     let btnAddCart = $("#btn_cart");
 
     btnAddCart.on("click", function(){
-    
+        $(".modal-form").toggleClass("modal-form__toggle");
         let productId = $(this).attr("data-idProduct");
         let countProductValue = $(".count-product .value");
 
@@ -33,7 +33,13 @@ function fetchData(data, count){
 
             // si la peticion es exitosa
             response.json().then(function(data){
-                renderCard(data, count);
+             
+                let formulario = document.querySelector(".esyt");
+                let input = formulario.querySelector(".row:nth-child(4)");
+                
+                
+                input.innerHTML(renderCard(data, count));
+                //$("#form__modal").append(renderCard(data, count));
             });
         })
         .catch(function(err){
@@ -49,13 +55,17 @@ const renderCard = (data, count) =>{
         "cantidad": count
     };
 
-
-    sendWhatsapp(product);
-}
-
-const sendWhatsapp = (product) =>{
-    var url = "whatsapp://send?text="+encodeURIComponent("product")+"&phone="+encodeURIComponent("+525548722671")
-
-    window.open(url);
-
+    return `<div id="product_container" class="row">
+            <div class="control">
+                <div id="product__detail" class="product">
+                    <div class="thumbnail">
+                       <img src="./static/img/products/anclas refaccionarias/ANCLAS REFACCIONARIAS 1.png" alt="product">
+                    </div>
+                <div class="details">
+                        <h6 class="title_container">${product.name}</h5>
+                        <span class="title_container">${product.cantidad}</span>
+                </div>
+            </div>
+            </div>
+        </div>`;
 }
