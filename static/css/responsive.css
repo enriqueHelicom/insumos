@@ -292,7 +292,7 @@
     flex-flow: column;
   }
 
-  .product-item .single-product .image-product {
+  .product-item .single-product .big-image {
     width: 100%;
     height: 40rem;
   }

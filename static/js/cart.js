@@ -12,7 +12,6 @@ export function cartShopping(){
         fetchData(formData, countProductValue.text());
         
         
-
     });
 
 
@@ -34,12 +33,10 @@ function fetchData(data, count){
             // si la peticion es exitosa
             response.json().then(function(data){
              
-                let formulario = document.querySelector(".esyt");
-                let input = formulario.querySelector(".row:nth-child(4)");
-                
-                
-                input.innerHTML(renderCard(data, count));
-                //$("#form__modal").append(renderCard(data, count));
+             let newElement = $(".test");
+             
+             newElement.html(renderCard(data, count));
+
             });
         })
         .catch(function(err){
@@ -55,7 +52,7 @@ const renderCard = (data, count) =>{
         "cantidad": count
     };
 
-    return `<div id="product_container" class="row">
+    return `
             <div class="control">
                 <div id="product__detail" class="product">
                     <div class="thumbnail">
@@ -66,6 +63,5 @@ const renderCard = (data, count) =>{
                         <span class="title_container">${product.cantidad}</span>
                 </div>
             </div>
-            </div>
-        </div>`;
+            `;
 }

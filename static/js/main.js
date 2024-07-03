@@ -41,9 +41,18 @@ $(document).ready(function ($) {
 
   //close modal form
   $("#close__modal").click(function(){
+    let countProductValue = $(".count-product .value");
     $(".modal-form").removeClass("modal-form__toggle");
     $("#form__modal")[0].reset();
     $("#product_container").remove();
+    countProductValue.text("0");
+  });
+
+  //image product
+  $('.thumbnail-set img').click(function(){
+      $(this).addClass("image-active").siblings().remove("image-active");
+      let image = $(this).attr("src");
+      $(".big-image img").attr("src", image);
   });
 
 });
