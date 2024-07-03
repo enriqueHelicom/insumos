@@ -91,24 +91,13 @@ section {
  */
 
 .btn {
-    padding: 1.5rem 2.5rem;
+    padding: 1rem 1.3rem;
     border: none;
     border-radius: 0.5rem;
     font-size: 2.2em;
     cursor: pointer;
 }
 
-.btn-whats{
-    padding: 1.2rem 1.8rem;
-    border: none;
-    border-radius: 0.5rem;
-    font-size: 1.8em;
-    cursor: pointer;
-}
-
-.btn:hover{
-    opacity: 80%;
-}
 
 .btn-green {
     background: var(--bg-btn-green);
@@ -228,7 +217,7 @@ label {
 }
 
 .container-box .navbar {
-    padding: 0.5rem 4rem;
+    padding: 1.5rem 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -244,10 +233,6 @@ label {
     margin-left: 2rem;
 }
 
-.container-box .navbar .navbar__menu .navbar__menu-item:nth-child(6){
-    margin-left: auto;
-}
-
 .navbar__menu .navbar__menu-item a {
     color: var(--link-navbar);
     font-size: 2em;
@@ -257,9 +242,24 @@ label {
     color: var(--secondary-color);
 }
 
-.navbar__menu .navbar__menu-item .btn-whats a{
-    color: #fff;
+.container-box .navbar .navbar__menu .navbar__menu-item:nth-child(6) {
+    margin-left: auto;
 }
+
+.container-box .navbar .navbar__menu .navbar__menu-item:nth-child(6) .btn-whs {
+    color: white;
+    padding: 1.2rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.container-box .navbar .navbar__menu .navbar__menu-item:nth-child(6):hover .btn-whs {
+    color: var(--bg-btn-green);
+    background: var(--title-color);
+    border: solid 1px var(--bg-btn-green);
+}
+
 
 .nav-middle .container-box .navbar .fa-bars{
     font-size: 3rem;
