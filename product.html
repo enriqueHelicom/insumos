@@ -95,10 +95,6 @@
 </header>
 <!-- header ends -->
 
-    <section class="backgroung__page">
-        <h6 class="title_container">Productos</h6>
-    </section>
-
     <section class="product-details">
         <div class="product-item">
 
@@ -128,7 +124,7 @@
                             <span class="value">0</span>
                             <span class="control plus">+</span>
                         </div>
-                        <button id="btn_cart" data-idProduct="it0001">add to cart</button>
+                        <button id="btn_cart" data-idProduct="it0001">Cotizar</button>
                 </div>
                 <table class="about__product">
                         <tr>
@@ -197,38 +193,58 @@
             <span class="exit-modal"></span>
             <h3 class="title_container">Ingresa tus datos de contacto</h3>
             <div class="form-container">
-                <form action="#" id="form__modal">
+                <form id="form__modal">
                     <div class="row">
                         <div class="control">
-                            <input class="w-100" type="text" placeholder="Nombre">
+                            <input 
+                                class="w-100" 
+                                type="text" 
+                                name="name"
+                                placeholder="Nombre">
                         </div>
 
                     </div>
                     <div class="row">
                         <div class="control">
-                            <input class="w-100" type="text" placeholder="Apellidos">
+                            <input 
+                                class="w-100" 
+                                type="text" 
+                                name="lastName"
+                                placeholder="Apellidos">
                         </div>
                     </div>
                     <div class="row">
                         <div class="control">
-                            <input class="w-100" type="text" placeholder="Numero telefonico">
+                            <input 
+                                class="w-100" 
+                                type="text"
+                                name="cellphone" 
+                                placeholder="Numero Telefónico">
                         </div>
                     </div>
                     <div class="row">
                         <div class="control">
-                            <input class="w-100" type="text" placeholder="correo electronico">
+                            <input 
+                                class="w-100" 
+                                type="text"
+                                name="email"
+                                placeholder="Correo Electrónico">
                         </div>
                     </div>
 
                     <div class="row test">
-
+                        
                     </div>
 
                     <div class="row">
                         <div class="control">
-                            <a class="btn btn-green" id="btn-wh" data-type="quotation">
-                                 Cotizar
-                            </a>
+                            <button 
+                                id="btn-wh"
+                                class="btn btn-green w-100 " data-type="quotation">
+                                <a class="btn-whs">
+                                    Cotizar
+                                </a>
+                            </button>
                         </div>
                         <div class="control">
                             <button id="close__modal" class="btn btn-cancel w-100">Cancelar</button>

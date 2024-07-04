@@ -1,6 +1,6 @@
 export function TypeButton(param){
     if(param == "quotation"){
-        console.log("cotizar");
+        sendWhatsapp(extractQuotation());
     }else if(param == "normal"){
         sendWhatsapp(messageGeneric())
     }
@@ -46,7 +46,28 @@ const messageGeneric = () =>{
 
 
 
-const messageQuotation = () =>{
+
+const extractQuotation  = () => {
+
+    let quotationForm = $("#form__modal").serializeArray();
+    let quotation = {}
+
+    $(quotationForm).each(function(index, obj){
+        quotation[obj.name] = obj.value;
+    });
+
+    console.log(quotation);
+    let text = `
+        !Hola soy ${quotation.name}¡
+        Estoy interesado en cotizar
+        ${quotation.count} ${quotation.nameProduct}
+        *********************
+        Telefono: ${quotation.cellphone}
+        Correro: ${quotation.email}
+    `;
+
+    let sanitizer = text.replace(" ","%20");
+    return sanitizer;
     
 }
 

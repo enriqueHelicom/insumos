@@ -21,7 +21,8 @@ export function cartShopping(){
 
 // Peticion asyn
 function fetchData(data, count){
-    fetch('http://www.frontend-dev.com/insumos/static/db/connection.php',{
+    
+    fetch('http://192.168.10.48/insumos_termicos/static/db/connection.php',{
         method: "POST",
         body: data
     })
@@ -55,6 +56,18 @@ const renderCard = (data, count) =>{
     };
 
     return `
+            <div class="control" hidden>
+                <input 
+                    type="text"
+                    name="count"
+                    value="${product.cantidad}"
+                    >
+                <input 
+                    type="text"
+                    name="nameProduct"
+                    value="${product.name}"
+                    >
+            </div>
             <div class="control">
                 <div id="product__detail" class="product">
                     <div class="thumbnail">
