@@ -1,8 +1,8 @@
 export function TypeButton(param){
     if(param == "quotation"){
         console.log("cotizar");
-    }else{
-        console.log("normal");
+    }else if(param == "normal"){
+        sendWhatsapp(messageGeneric())
     }
 }
 
@@ -13,14 +13,12 @@ function sendWhatsapp(message){
     let urlWhatsapp = "";
 
     if(isMobile()){
-        urlWhatsapp = `https://wa.me/${numberPhone}?text=${message()}`;
+        urlWhatsapp = `https://wa.me/${numberPhone}?text=${message}`;
     }else{
-        urlWhatsapp = `https://web.whatsapp.com/send?phone=${numberPhone}&text=${message()}`;
+        urlWhatsapp = `https://web.whatsapp.com/send?phone=${numberPhone}&text=${message}`;
     }
 
-    $(".btn-whats a").prop('href',urlWhatsapp);
-
-
+    $(".btn-whs").prop('href',urlWhatsapp);
 }
 
 //validate mobiles
@@ -38,7 +36,7 @@ function isMobile(){
 
 // messages
 const messageGeneric = () =>{
-    let text = 
+    let text =
     `¡Hola! Estoy interesado en un producto`;
 
    let sanitizer = text.replace(" ","%20");
@@ -49,7 +47,7 @@ const messageGeneric = () =>{
 
 
 const messageQuotation = () =>{
-
+    
 }
 
 

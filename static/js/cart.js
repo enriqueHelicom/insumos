@@ -2,16 +2,18 @@ export function cartShopping(){
     let btnAddCart = $("#btn_cart");
 
     btnAddCart.on("click", function(){
-        $(".modal-form").toggleClass("modal-form__toggle");
+        let countProductValue = $(".count-product .value").text();
         let productId = $(this).attr("data-idProduct");
-        let countProductValue = $(".count-product .value");
 
-        let formData = new FormData();
-        formData.append('id',productId);
+        //valida si el contador es diferente de 0
+        if(countProductValue != 0){
+            $(".modal-form").toggleClass("modal-form__toggle");
+            let formData = new FormData();
+            formData.append('id',productId);
+            fetchData(formData, countProductValue);
+        }
 
-        fetchData(formData, countProductValue.text());
-        
-        
+
     });
 
 
@@ -19,7 +21,7 @@ export function cartShopping(){
 
 // Peticion asyn
 function fetchData(data, count){
-    fetch('http://192.168.10.48/insumos_termicos/static/db/connection.php',{
+    fetch('http://www.frontend-dev.com/insumos/static/db/connection.php',{
         method: "POST",
         body: data
     })
@@ -32,9 +34,9 @@ function fetchData(data, count){
 
             // si la peticion es exitosa
             response.json().then(function(data){
-             
+
              let newElement = $(".test");
-             
+
              newElement.html(renderCard(data, count));
 
             });

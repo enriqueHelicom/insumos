@@ -1,6 +1,6 @@
 import { counterProduct } from "./count.js";
 import { cartShopping } from "./cart.js";
-import { TypeButton } from "./TypeButton.js";
+import { TypeButton } from "./whatsapp.js";
 
 
 $(document).ready(function ($) {
@@ -12,18 +12,15 @@ $(document).ready(function ($) {
     cartShopping();
 
     /** whatsapp validate */
-    let btn_whats = document.querySelector("#btn-wh");
-    
-    btn_whats.on("click", function(){
-        alert("test");
-        let dataAttribute = $(this).attr("data-type");
-        console.log(dataAttribute);
+    let btn_whats = $("#btn-wh");
 
+    btn_whats.on("click", function(){
+        let dataAttribute = $(this).attr("data-type");
         TypeButton(dataAttribute);
     });
 
 
 
-    
-   
+
+
 })
