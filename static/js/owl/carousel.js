@@ -64,10 +64,11 @@ $("document").ready(function($){
                 autoplay: true,
                 dots: false,
                 nav: false,
-                items: 1,
+                items: 2,
             },
 
             768: {
+                loop: true,
                 dots: false,
                 nav: false,
                 items: 3,
