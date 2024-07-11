@@ -73,8 +73,7 @@ body {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
 }
 
 ul,
@@ -327,7 +326,7 @@ label {
 }
 
 .home__banner .slide-item .slide-item__block img{
-  width: 50rem;
+  width: 40rem;
 }
 
 .slide-item__block .slide-item__text {
@@ -580,7 +579,7 @@ label {
 
 .special_services {
   position: relative;
-  min-height: 80rem;
+  height: 70rem;
   z-index: 0;
   background-image: url("../img/banners/desktop/bg_option.webp");
   background-repeat: no-repeat;
@@ -599,42 +598,38 @@ label {
 .special_services .container-box {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  padding: 0 5rem;
 }
 
 .special_services .container-box .card__services {
   width: 25rem;
+  height:32.5rem;
+  display: flex;
+  flex-flow: column;
   background: var(--primary-color);
-  border-radius: 0.8rem;
-  cursor: pointer;
+  border-radius: 0.5rem;
 }
 
-.special_services .container-box .card__services:hover {
-  transition: all 0.5s;
-  transform: scale(1.1);
+.container-box .card__services .card__services-img{
+  height: 70%;
 }
 
-.container-box .card__services .card__services-img > img {
-  border-radius: 0.8rem 0.8rem 0 0;
+.container-box .card__services .card__services-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .container-box .card__services .card__services-text {
-  padding: 1.2rem 1.5rem;
-  text-align: center;
+  height: 30%;
+  padding:  2rem 3.5rem;
 }
 
 .container-box .card__services .card__services-text span {
   color: var(--title-color);
-  font-weight: 600;
-  font-size: 2em;
-}
-
-.container-box .card__services button {
-  width: 100%;
-  margin-top: 2.5rem;
-  margin-bottom: 1.5rem;
-  padding: 1.4rem;
+  font-weight: 500;
   font-size: 2em;
 }
 
@@ -1077,9 +1072,10 @@ label {
   height: 40rem;
   border-radius: 0.5rem;
   overflow: hidden;
-  border: solid 1px grey;
   padding: 2.4rem 2.5rem;
-  background: var(--bg-gradiant);
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border: solid 1px #eee;
 }
 
 .product-item .single-product .big-image img {
@@ -1098,7 +1094,9 @@ label {
   width: 10rem;
   height: 10rem;
   border-radius: 0.5rem;
-  background: var(--bg-gradiant);
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border: solid 1px #eee;
   padding: 0.2rem 0.5rem;
 }
 
@@ -1130,7 +1128,7 @@ label {
   border: 1px solid var(--secondary-color);
   border-radius: 0.5rem;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-around;
   transition: all 0.3s ease-in-out;
 }

@@ -1,7 +1,7 @@
 $("document").ready(function($){
 
     const topProducts = $('.top__products-cards'),
-          specialServices = $('.carousel__services');
+          specialServices = $('.owl__services');
 
     topProducts.owlCarousel({
         items: 1,
@@ -41,7 +41,7 @@ $("document").ready(function($){
     });
 
     specialServices.owlCarousel({
-        items: 4,
+        items: 0,
         loop: false,
         nav: false,
         dots: false,
@@ -64,7 +64,7 @@ $("document").ready(function($){
                 autoplay: true,
                 dots: false,
                 nav: false,
-                items: 2,
+                items: 1,
             },
 
             768: {

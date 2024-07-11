@@ -53,15 +53,21 @@
     height: 23.5rem;
   }
   /* #special_services 1024 */
-  .special_services .container-box .card__services {
-    width: 20.5rem;
-    background: var(--primary-color);
-    border-radius: 0.8rem;
-    cursor: pointer;
+   .special_services .container-box .card__services {
+    width: 21.5rem;
+    height: 35.5rem;
+  }
+
+  .container-box .card__services .card__services-img {
+    height: 70%;
+  }
+
+  .container-box .card__services .card__services-text {
+    height: 30%;
+    padding:  2rem 2.0rem;
   }
 
   /* #Contact US 768 */
-
 
   .product-item .single-product .big-image img {
     width: 100%;
@@ -189,7 +195,6 @@
   /* #About 768 */
   .about {
     padding-top: 5rem;
-
   }
 
   .about .container-box .pictures_box div:nth-child(1) > img {
@@ -201,10 +206,22 @@
     width: 90%;
   }
 
+  /* #Special Services 768 */
+  .special_services .container-box .card__services {
+    width: 25rem;
+    height: 38.5rem;
+  }
+
+  .container-box .card__services .card__services-img {
+    height: 70%;
+  }
+
+  .container-box .card__services .card__services-text {
+    height: 30%;
+  }
   /* #Sectores 768 */
 
   /* #Contact US 768 */
-
 
   .footer {
     flex-flow: column;
@@ -267,7 +284,7 @@
 
   .backgroung__page {
     top: -100px;
-    height: 30%;
+    height: 30rem;
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -276,12 +293,12 @@
   }
 
   .backgroung__page > h6 {
-    margin-top: 3rem;
+    margin-top: 4.5rem;
   }
 
   /* #Details 768 */
   .product-details {
-    height: 50vh;
+    height: 60rem;
   }
 
   .product-details .product-item {
@@ -426,10 +443,25 @@
     width: 40%;
   }
 
+  /* #Special Services 576 */
+
+  .special_services .container-box .card__services {
+    width: 100%;
+    height: 40.5rem;
+  }
+
+  .container-box .card__services .card__services-img {
+    height: 80%;
+  }
+
+  .container-box .card__services .card__services-text {
+    height: 20%;
+  }
   /* #Sectores 576 */
   .sectores .container-box {
     flex-wrap: wrap;
   }
+
   .container-box .sectores__item {
     width: 50%;
   }
@@ -452,7 +484,11 @@
 
   /* #Details 576 */
   .product-details {
-    height: 100vh;
+    height: 110rem;
+  }
+
+  .product-item .description{
+    width: 100%;
   }
 
   .product-details .product-item {
