@@ -64,7 +64,7 @@
 
   .container-box .card__services .card__services-text {
     height: 30%;
-    padding:  2rem 2.0rem;
+    padding: 2rem 2.0rem;
   }
 
   /* #Contact US 768 */
@@ -246,15 +246,7 @@
     margin-top: 1.8rem;
   }
 
-  .footer-top .item .contact__box .item ul li a i {
-    font-size: 2.5em;
-  }
-
-  .footer-top .item .address a,
-  .footer-top .item .terms a {
-    font-size: 2.5em;
-  }
-
+ 
   /* #Shop 768 */
   .products {
     flex-flow: column;
@@ -349,10 +341,6 @@
     height: 40rem;
     transform: translateX(0px);
     transition: all 1s ease-in-out 0.7s;
-  }
-
-  .slide-item__block .slide-item__text {
-    font-size: 6rem;
   }
 
   /* #TopProduct 576 */
