@@ -21,8 +21,8 @@ export function cartShopping(){
 
 // Peticion asyn
 function fetchData(data, count){
-    
-    fetch('http://192.168.10.48/insumos_termicos/static/db/connection.php',{
+
+    fetch('http://www.frontend-dev.com/insumos/static/db/connection.php',{
         method: "POST",
         body: data
     })
@@ -71,11 +71,11 @@ const renderCard = (data, count) =>{
             <div class="control">
                 <div id="product__detail" class="product">
                     <div class="thumbnail">
-                       <img src="./static/img/products/anclas refaccionarias/ANCLAS REFACCIONARIAS 1.png" alt="product">
+                       <img src="./static/img/products/regulador/regulador1.png" alt="product">
                     </div>
                 <div class="details">
-                        <h6 class="title_container">${product.name}</h5>
-                        <span class="title_container">${product.cantidad}</span>
+                        <h1 class="sub-title-sz">${product.name}</h1>
+                        <span class="body-sz">${product.cantidad}</span>
                 </div>
             </div>
             `;

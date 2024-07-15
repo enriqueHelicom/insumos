@@ -11,10 +11,10 @@
 
     function searchProductById($id, $products){
             $response = "sin coincidencias";
-         
+
 
             foreach ($products as $key => $value) {
-             
+
                 if($products[$key]["id"] === $id){
                     $response = $value;
                     break;

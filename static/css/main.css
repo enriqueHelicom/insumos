@@ -48,14 +48,14 @@
   font-family: "BebasNeueBold";
 }
 
-.title-sz{
+.title-sz {
   font-size: var(--font-size-h1);
   letter-spacing: 0.05em;
 }
-.sub-title-sz{
+.sub-title-sz {
   font-size: var(--font-size-h2);
 }
-.body-sz{
+.body-sz {
   font-size: var(--font-size-body);
 }
 
@@ -95,7 +95,7 @@ li {
 section {
   width: 100%;
   padding: 0 4rem;
-  margin:  0 auto;
+  margin: 0 auto;
 }
 
 /**
@@ -104,7 +104,8 @@ section {
 
 .btn {
   padding: 1rem 1.8rem;
-  border: none;align-self: start;
+  border: none;
+  align-self: start;
   border-radius: 0.5rem;
   font-size: 1.5em;
   cursor: pointer;
@@ -315,7 +316,7 @@ section {
   transition: all 1s ease-in-out 0.7s;
 }
 
-.home__banner .slide-item .slide-item__block img{
+.home__banner .slide-item .slide-item__block img {
   width: 40rem;
 }
 
@@ -583,18 +584,18 @@ section {
 
 .special_services .container-box .card__services {
   width: 25rem;
-  height:32.5rem;
+  height: 32.5rem;
   display: flex;
   flex-flow: column;
   background: var(--primary-color);
   border-radius: 0.5rem;
 }
 
-.container-box .card__services .card__services-img{
+.container-box .card__services .card__services-img {
   height: 70%;
 }
 
-.container-box .card__services .card__services-img img{
+.container-box .card__services .card__services-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -602,7 +603,7 @@ section {
 
 .container-box .card__services .card__services-text {
   height: 30%;
-  padding:  2rem 3.5rem;
+  padding: 2rem 3.5rem;
 }
 
 .container-box .card__services .card__services-text span {
@@ -648,9 +649,9 @@ section {
   padding: 0.5rem 5rem;
 }
 
-.container-box .sectores__item img{
-    width: 10rem;
-    height: auto;
+.container-box .sectores__item img {
+  width: 10rem;
+  height: auto;
 }
 
 .container-box .sectores__item > h2 {
@@ -677,7 +678,6 @@ section {
   display: flex;
   justify-content: space-between;
 }
-
 
 .contact .box-container .item:nth-child(1) {
   width: 50rem;
@@ -764,11 +764,11 @@ section {
 
 .footer-top .item .contact__box .item ul li a {
   color: var(--title-color);
-  font-size:var(--font-size-small);
+  font-size: var(--font-size-small);
 }
 
 .footer-top .item .contact__box .item ul li a i {
-  font-size:var(--font-size-small);
+  font-size: var(--font-size-small);
   margin-left: 1.5rem;
 }
 
@@ -791,13 +791,13 @@ section {
 }
 
 .footer-top .item .address a i {
-  font-size:var(--font-size-small);
+  font-size: var(--font-size-small);
 }
 
 .footer-top .item .address a,
 .footer-top .item .terms a {
   color: var(--title-color);
-  font-size:var(--font-size-small);
+  font-size: var(--font-size-small);
   margin-top: 2rem;
 }
 
@@ -808,7 +808,7 @@ section {
 
 .footer-bottom h1 {
   color: var(--title-color);
-  font-size:var(--font-size-small);
+  font-size: var(--font-size-small);
   font-weight: 500;
 }
 
@@ -831,7 +831,7 @@ section {
   background-size: cover;
 }
 
-.backgroung__page  h1 {
+.backgroung__page h1 {
   position: relative;
   top: 50%;
   color: var(--title-color);
@@ -905,7 +905,6 @@ section {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  
 }
 
 .shop-block .shop-block__cards .shop-block__card-item {
@@ -921,15 +920,14 @@ section {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-.shop-block .shop-block__cards .shop-block__card-item .img__product{
+.shop-block .shop-block__cards .shop-block__card-item .img__product {
   padding: 4.5rem;
 }
 
-.shop-block .shop-block__cards .shop-block__card-item .content p{
+.shop-block .shop-block__cards .shop-block__card-item .content p {
   font-size: var(--font-size-label);
   color: var(--primary-color);
 }
-
 
 /** pagination */
 .pagination {
@@ -1018,14 +1016,14 @@ section {
   border-radius: 0.5rem;
   overflow: hidden;
   padding: 2.4rem 2.5rem;
-  background: #fff;
+  background: var(--grey-color);
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  border: solid 1px #eee;
+  border: solid 1px gray;
 }
 
 .product-item .single-product .big-image img {
-    width: 100%;
-  }
+  width: 100%;
+}
 
 .product-item .single-product .thumbnail-set {
   width: 100%;
@@ -1039,9 +1037,9 @@ section {
   width: 10rem;
   height: 10rem;
   border-radius: 0.5rem;
-  background: #fff;
+  background: var(--grey-color);
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  border: solid 1px #eee;
+  border: solid 1px gray;
   padding: 0.2rem 0.5rem;
 }
 
@@ -1050,14 +1048,13 @@ section {
   width: 60rem;
 }
 
-.product-item .description h6 {
-  font-size: 4rem;
+.product-item .description h1 {
   font-weight: 600;
   color: var(--primary-color);
 }
 
 .product-item .description .text {
-  font-size: 2rem;
+  font-size: var(--font-size-label);
 }
 
 .product-item .description .count-add {
@@ -1080,11 +1077,12 @@ section {
 
 .product-item .description .count-add .count-product > span {
   display: block;
-  font-size: 3rem;
+  font-size: var(--font-size-label);
   font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .product-item .description .count-add button {
@@ -1101,7 +1099,7 @@ section {
   transition: all 0.3s ease-in-out;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: var(--font-size-label);
 }
 
 .description .about__product {
@@ -1113,7 +1111,7 @@ section {
 .description .about__product tr {
   height: 40px;
   line-height: 40px;
-  font-size: 2rem;
+  font-size: var(--font-size-label);
 }
 
 /** Modal Form */
@@ -1161,7 +1159,7 @@ section {
   width: 20rem;
   height: 3.5rem;
   padding: 0 0.5rem;
-  font-size: 2rem;
+  font-size: var(--font-size-label);
   border-radius: 0.5rem;
   border: solid 1px var(--primary-color);
   outline: none;
